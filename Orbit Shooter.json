@@ -170,6 +170,42 @@
         "name": "Enemy Bullet Placeholder",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Bullet Placeholder2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Bullet Placeholder2",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Enemy Bullet Placeholder2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Enemy Bullet Placeholder2",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Health Regeneration Placeholder.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Health Regeneration Placeholder",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -201,7 +237,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.2,
         "snap": true,
-        "zoomFactor": 0.9934433498259574,
+        "zoomFactor": 0.9296875000000003,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -412,7 +448,7 @@
               "folded": true,
               "name": "Rotate_Speed",
               "type": "number",
-              "value": 90
+              "value": 60
             },
             {
               "folded": true,
@@ -586,7 +622,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Bullet Placeholder",
+                      "image": "Bullet Placeholder2",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1153,13 +1189,13 @@
               "folded": true,
               "name": "Orbit_Distance",
               "type": "number",
-              "value": 520
+              "value": 560
             },
             {
               "folded": true,
               "name": "Move_Speed",
               "type": "number",
-              "value": 45
+              "value": 30
             },
             {
               "folded": true,
@@ -1171,7 +1207,7 @@
               "folded": true,
               "name": "Bullet_Speed",
               "type": "number",
-              "value": 100
+              "value": 130
             }
           ],
           "effects": [],
@@ -1287,12 +1323,90 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Enemy Bullet Placeholder",
+                      "image": "Enemy Bullet Placeholder2",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 16,
-                        "y": 4
+                        "x": 8,
+                        "y": 2
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 16,
+                            "y": 0
+                          },
+                          {
+                            "x": 16,
+                            "y": 4
+                          },
+                          {
+                            "x": 0,
+                            "y": 4
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Health_Regeneration",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [
+            {
+              "name": "Spawned",
+              "type": "boolean",
+              "value": true
+            },
+            {
+              "folded": true,
+              "name": "Health",
+              "type": "number",
+              "value": 3
+            }
+          ],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "Health Regeneration Placeholder",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Health Regeneration Placeholder",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -1312,11 +1426,11 @@
                           },
                           {
                             "x": 32,
-                            "y": 8
+                            "y": 32
                           },
                           {
                             "x": 0,
-                            "y": 8
+                            "y": 32
                           }
                         ]
                       ]
@@ -1357,6 +1471,9 @@
           },
           {
             "objectName": "Enemy_Bullet"
+          },
+          {
+            "objectName": "Health_Regeneration"
           }
         ]
       },
@@ -1631,6 +1748,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Player",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -1924,7 +2042,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Enemy",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -2564,32 +2681,13 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "BuiltinCommonInstructions::Or"
+                    "value": "CompareObjectTimer"
                   },
-                  "parameters": [],
-                  "subInstructions": [
-                    {
-                      "type": {
-                        "value": "CompareObjectTimer"
-                      },
-                      "parameters": [
-                        "Asteroid",
-                        "\"Life Time\"",
-                        ">=",
-                        "Asteroid.Variable(Life_Time)"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "VarObjet"
-                      },
-                      "parameters": [
-                        "Asteroid",
-                        "Health",
-                        "<=",
-                        "0"
-                      ]
-                    }
+                  "parameters": [
+                    "Asteroid",
+                    "\"Life Time\"",
+                    ">=",
+                    "Asteroid.Variable(Life_Time)"
                   ]
                 }
               ],
@@ -2609,6 +2707,330 @@
                   },
                   "parameters": [
                     "Asteroid",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Asteroid",
+                    "Health",
+                    "<=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "RemoveObjectTimer"
+                  },
+                  "parameters": [
+                    "Asteroid",
+                    "\"Life Time\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Asteroid",
+                    ""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::CompareNumbers"
+                      },
+                      "parameters": [
+                        "RandomInRange(0, 3)",
+                        "<=",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "Health_Regeneration",
+                        "Asteroid.CenterX()",
+                        "Asteroid.CenterY()",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "folded": true,
+          "name": "Health Regeneration",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Action at spawn"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Health_Regeneration",
+                    "Spawned",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AddForceAL"
+                  },
+                  "parameters": [
+                    "Health_Regeneration",
+                    "RandomFloatInRange(0, 360)",
+                    "50",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "Health_Regeneration",
+                    "\"lifetime\""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "Health_Regeneration",
+                        "Spawned",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "delete when lifetime over"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "Health_Regeneration",
+                    "\"lifetime\"",
+                    ">=",
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                  },
+                  "parameters": [
+                    "Health_Regeneration",
+                    "Tween",
+                    "\"hide\"",
+                    "0",
+                    "\"easeInCubic\"",
+                    "1",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "RemoveObjectTimer"
+                  },
+                  "parameters": [
+                    "Health_Regeneration",
+                    "\"lifetime\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "reduce health when hit\n"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Health_Regeneration",
+                    "Bullet",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Health_Regeneration",
+                    "Health",
+                    "-",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Bullet",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "destroy and refill health"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "Health_Regeneration",
+                    "Health",
+                    "<=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Health",
+                    "=",
+                    "clamp(Player.Variable(Health) + 2, 0, 5)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Planet",
+                    "Health",
+                    "=",
+                    "clamp(Planet.Variable(Health) + 10, 0, 20)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Health_Regeneration",
                     ""
                   ]
                 }
@@ -2663,6 +3085,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Enemy Bullet",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -2812,7 +3235,7 @@
                   "parameters": [
                     "Asteroid_Spawner",
                     "Planet",
-                    "520",
+                    "560",
                     "Asteroid_Spawner.Angle() + 180"
                   ]
                 },
