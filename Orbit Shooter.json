@@ -377,6 +377,15 @@
         "name": "Player Thrust Particle",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Planet Atmosphere.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Planet Atmosphere.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -401,14 +410,14 @@
       "uiSettings": {
         "grid": true,
         "gridType": "rectangular",
-        "gridWidth": 32,
-        "gridHeight": 32,
+        "gridWidth": 16,
+        "gridHeight": 16,
         "gridOffsetX": 0,
         "gridOffsetY": 0,
         "gridColor": 10401023,
         "gridAlpha": 0.2,
         "snap": true,
-        "zoomFactor": 1.7458023987467846,
+        "zoomFactor": 0.993443349825961,
         "windowMask": false
       },
       "objectsGroups": [
@@ -448,6 +457,12 @@
               "value": 0
             }
           ]
+        },
+        {
+          "folded": true,
+          "name": "Player_Score",
+          "type": "number",
+          "value": 0
         }
       ],
       "instances": [
@@ -635,6 +650,40 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 512,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Atmosphere",
+          "persistentUuid": "ca25465b-70c7-4b6f-af6c-fb06b189af28",
+          "width": 512,
+          "x": 32,
+          "y": 160,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "Score",
+          "persistentUuid": "c0f369d9-1a61-4fee-aedb-10fd5feae71f",
+          "width": 288,
+          "x": 336,
+          "y": 16,
+          "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -652,21 +701,7 @@
               "value": 20
             }
           ],
-          "effects": [
-            {
-              "effectType": "Glow",
-              "name": "Effect",
-              "doubleParameters": {
-                "distance": 20,
-                "innerStrength": 1,
-                "outerStrength": 2
-              },
-              "stringParameters": {
-                "color": "42;166;255"
-              },
-              "booleanParameters": {}
-            }
-          ],
+          "effects": [],
           "behaviors": [
             {
               "name": "EllipseMovement",
@@ -2679,6 +2714,118 @@
             }
           ],
           "behaviors": []
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Atmosphere",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [
+            {
+              "effectType": "BlendingMode",
+              "name": "Effect",
+              "doubleParameters": {
+                "blendmode": 1,
+                "opacity": 1
+              },
+              "stringParameters": {},
+              "booleanParameters": {}
+            }
+          ],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Planet Atmosphere.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 47,
+                            "y": 47
+                          },
+                          {
+                            "x": 209,
+                            "y": 47
+                          },
+                          {
+                            "x": 209,
+                            "y": 209
+                          },
+                          {
+                            "x": 47,
+                            "y": 209
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "Score",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "0000",
+          "font": "",
+          "textAlignment": "right",
+          "characterSize": 20,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "0000",
+            "font": "",
+            "textAlignment": "right",
+            "characterSize": 20,
+            "color": "255;255;255"
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -2686,6 +2833,9 @@
         "children": [
           {
             "objectName": "Planet"
+          },
+          {
+            "objectName": "Atmosphere"
           },
           {
             "objectName": "Background"
@@ -2737,11 +2887,15 @@
           },
           {
             "objectName": "Player_Thrust"
+          },
+          {
+            "objectName": "Score"
           }
         ]
       },
       "events": [
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -2945,35 +3099,76 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
-          "name": "UI Health Bar",
+          "name": "UI",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
+            {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "folded": true,
+              "name": "UI Health Bar",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+                      },
+                      "parameters": [
+                        "Player_Health_Bar",
+                        "=",
+                        "Player.Variable(Health)",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+                      },
+                      "parameters": [
+                        "Planet_Health_Bar",
+                        "=",
+                        "Planet.Variable(Health)",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": []
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Score UI"
+            },
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
               "actions": [
                 {
                   "type": {
-                    "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
                   },
                   "parameters": [
-                    "Player_Health_Bar",
+                    "Score",
+                    "Text",
                     "=",
-                    "Player.Variable(Health)",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
-                  },
-                  "parameters": [
-                    "Planet_Health_Bar",
-                    "=",
-                    "Planet.Variable(Health)",
-                    ""
+                    "LargeNumberToString(Player_Score)"
                   ]
                 }
               ]
@@ -4006,6 +4201,16 @@
               "actions": [
                 {
                   "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Player_Score",
+                    "+",
+                    "100"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Create"
                   },
                   "parameters": [
@@ -4201,17 +4406,6 @@
                         ">",
                         "5"
                       ]
-                    },
-                    {
-                      "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::Index"
-                      },
-                      "parameters": [
-                        "Asteroid",
-                        "Animation",
-                        "<=",
-                        "8"
-                      ]
                     }
                   ],
                   "actions": [
@@ -4384,39 +4578,151 @@
                   ]
                 }
               ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "RemoveObjectTimer"
-                  },
-                  "parameters": [
-                    "Asteroid",
-                    "\"Life Time\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "Asteroid_Explosion",
-                    "Asteroid.CenterX()",
-                    "Asteroid.CenterY()",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "Asteroid",
-                    ""
-                  ]
-                }
-              ],
+              "actions": [],
               "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Score based on size"
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::Index"
+                      },
+                      "parameters": [
+                        "Asteroid",
+                        "Animation",
+                        "<=",
+                        "2"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Player_Score",
+                        "+",
+                        "100"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::Index"
+                      },
+                      "parameters": [
+                        "Asteroid",
+                        "Animation",
+                        ">",
+                        "2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::Index"
+                      },
+                      "parameters": [
+                        "Asteroid",
+                        "Animation",
+                        "<=",
+                        "5"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Player_Score",
+                        "+",
+                        "50"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::Index"
+                      },
+                      "parameters": [
+                        "Asteroid",
+                        "Animation",
+                        ">",
+                        "5"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Player_Score",
+                        "+",
+                        "25"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "RemoveObjectTimer"
+                      },
+                      "parameters": [
+                        "Asteroid",
+                        "\"Life Time\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "Asteroid_Explosion",
+                        "Asteroid.CenterX()",
+                        "Asteroid.CenterY()",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "Asteroid",
+                        ""
+                      ]
+                    }
+                  ]
+                },
                 {
                   "type": "BuiltinCommonInstructions::Comment",
                   "color": {
@@ -4686,6 +4992,16 @@
               "actions": [
                 {
                   "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Player_Score",
+                    "+",
+                    "150"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "ModVarObjet"
                   },
                   "parameters": [
@@ -4912,6 +5228,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Asteroid Spawner",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -5292,6 +5609,10 @@
         {
           "name": "SmoothCamera",
           "type": "SmoothCamera::SmoothCamera"
+        },
+        {
+          "name": "Text",
+          "type": "TextContainerCapability::TextContainerBehavior"
         },
         {
           "name": "Tween",
