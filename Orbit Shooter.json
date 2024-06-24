@@ -417,7 +417,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.2,
         "snap": true,
-        "zoomFactor": 0.993443349825961,
+        "zoomFactor": 0.9296875000000033,
         "windowMask": false
       },
       "objectsGroups": [
@@ -461,6 +461,18 @@
         {
           "folded": true,
           "name": "Player_Score",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "folded": true,
+          "name": "Level_Wave",
+          "type": "number",
+          "value": 1
+        },
+        {
+          "folded": true,
+          "name": "Health_Adder",
           "type": "number",
           "value": 0
         }
@@ -681,6 +693,23 @@
           "x": 336,
           "y": 16,
           "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "Wave",
+          "persistentUuid": "24bc6fef-1c69-44ed-95bb-10aa18d96c8c",
+          "width": 288,
+          "x": 336,
+          "y": 48,
+          "zOrder": 15,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2796,7 +2825,70 @@
           "underlined": false,
           "variables": [],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
+              "bottomEdgeAnchor": 0,
+              "leftEdgeAnchor": 0,
+              "relativeToOriginalWindowSize": true,
+              "rightEdgeAnchor": 2,
+              "topEdgeAnchor": 0,
+              "useLegacyBottomAndRightAnchors": false
+            }
+          ],
+          "string": "0000",
+          "font": "",
+          "textAlignment": "right",
+          "characterSize": 20,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "0000",
+            "font": "",
+            "textAlignment": "right",
+            "characterSize": 20,
+            "color": "255;255;255"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "Wave",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
+              "bottomEdgeAnchor": 0,
+              "leftEdgeAnchor": 0,
+              "relativeToOriginalWindowSize": true,
+              "rightEdgeAnchor": 2,
+              "topEdgeAnchor": 0,
+              "useLegacyBottomAndRightAnchors": false
+            }
+          ],
           "string": "0000",
           "font": "",
           "textAlignment": "right",
@@ -2890,6 +2982,9 @@
           },
           {
             "objectName": "Score"
+          },
+          {
+            "objectName": "Wave"
           }
         ]
       },
@@ -2986,6 +3081,33 @@
                     "Asteroid_Spawner",
                     "=",
                     "Player.Angle() + 180 + RandomFloatInRange(-60, 60)"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Wave Timer\n"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Wave\""
                   ]
                 }
               ]
@@ -3154,7 +3276,7 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "Score UI"
+              "comment": "UI Text"
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -3169,6 +3291,17 @@
                     "Text",
                     "=",
                     "LargeNumberToString(Player_Score)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Wave",
+                    "Text",
+                    "=",
+                    "LargeNumberToString(Level_Wave)"
                   ]
                 }
               ]
@@ -3411,6 +3544,66 @@
                     "",
                     "\"Untitled scene\"",
                     ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "folded": true,
+          "name": "Wave System",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Wave\"",
+                    ">=",
+                    "10"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Level_Wave",
+                    "+",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Health_Adder",
+                    "=",
+                    "floor(sqrt(Level_Wave))"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Wave\""
                   ]
                 }
               ]
@@ -3866,6 +4059,17 @@
                     "\"easeOutCubic\"",
                     "1",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Enemy",
+                    "Health",
+                    "+",
+                    "Health_Adder"
                   ]
                 }
               ],
@@ -4363,6 +4567,35 @@
                       "parameters": [
                         "Asteroid",
                         "Animation",
+                        "<=",
+                        "2"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Asteroid",
+                        "Health",
+                        "=",
+                        "5 + Health_Adder"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::Index"
+                      },
+                      "parameters": [
+                        "Asteroid",
+                        "Animation",
                         ">",
                         "2"
                       ]
@@ -4388,7 +4621,7 @@
                         "Asteroid",
                         "Health",
                         "=",
-                        "3"
+                        "3 + Health_Adder"
                       ]
                     }
                   ]
@@ -4417,7 +4650,7 @@
                         "Asteroid",
                         "Health",
                         "=",
-                        "1"
+                        "1 + Health_Adder"
                       ]
                     }
                   ]
