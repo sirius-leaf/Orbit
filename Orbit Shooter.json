@@ -77,53 +77,8 @@
         "alwaysLoaded": false,
         "file": "assets/Player Placeholder.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Player Placeholder.png\"}",
-        "name": "Player Placeholder",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Bullet Placeholder.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Bullet Placeholder",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Player Placeholder.png",
-        "kind": "image",
         "metadata": "",
         "name": "assets\\Player Placeholder.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Big Asteroid Placeholder2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Big Asteroid Placeholder2",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Asteroid Placeholder2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Asteroid Placeholder2",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Small Asteroid Placeholder2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Small Asteroid Placeholder2",
         "smoothed": false,
         "userAdded": true
       },
@@ -164,15 +119,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Enemy Bullet Placeholder.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Enemy Bullet Placeholder",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/Bullet Placeholder2.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
@@ -186,15 +132,6 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "Enemy Bullet Placeholder2",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/NewSprite.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "NewSprite",
         "smoothed": false,
         "userAdded": true
       },
@@ -215,6 +152,222 @@
         "name": "Shoot Button",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Ship.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Ship.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Big Asteroid.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Big Asteroid",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Big Asteroid2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Big Asteroid2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Big Asteroid3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Big Asteroid3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Asteroid.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Asteroid",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Asteroid2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Asteroid2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Asteroid3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Asteroid3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Small.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Small",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Small2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Small2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Small3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Small3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Health Heal.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Health Heal.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Health Regeneration Placeholder2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Health Regeneration Placeholder2",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Enemy.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Enemy.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Enemy Placeholder3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Enemy Placeholder",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Enemy 2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Enemy 2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Enemy 2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Enemy 2",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Blue Planet.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Blue Planet.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Background.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Background.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Background2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Background2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Background2.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Background2.png2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Pixel Circle.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Pixel Circle",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Pixel Circle2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Pixel Circle2",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Health Regeneration Placeholder.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Health Regeneration Placeholder.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Health Add Particle.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Health Add Particle",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -227,35 +380,65 @@
   "variables": [],
   "layouts": [
     {
-      "b": 112,
+      "b": 29,
       "disableInputWhenNotFocused": true,
       "mangledName": "Untitled_32scene",
       "name": "Untitled scene",
-      "r": 112,
+      "r": 22,
       "standardSortMethod": true,
       "stopSoundsOnStartup": true,
       "title": "",
-      "v": 112,
+      "v": 26,
       "uiSettings": {
         "grid": true,
         "gridType": "rectangular",
-        "gridWidth": 16,
-        "gridHeight": 16,
+        "gridWidth": 32,
+        "gridHeight": 32,
         "gridOffsetX": 0,
         "gridOffsetY": 0,
         "gridColor": 10401023,
         "gridAlpha": 0.2,
         "snap": true,
-        "zoomFactor": 0.9296875000000003,
+        "zoomFactor": 0.8416428125373127,
         "windowMask": false
       },
-      "objectsGroups": [],
+      "objectsGroups": [
+        {
+          "name": "Mobile_UI",
+          "objects": [
+            {
+              "name": "Right_Button"
+            },
+            {
+              "name": "Left_Button"
+            },
+            {
+              "name": "Shoot_Button"
+            }
+          ]
+        }
+      ],
       "variables": [
         {
           "folded": true,
           "name": "Enemy_In_Scene",
           "type": "number",
           "value": 3
+        },
+        {
+          "name": "Start_Camera_Pos",
+          "type": "array",
+          "children": [
+            {
+              "folded": true,
+              "type": "number",
+              "value": 0
+            },
+            {
+              "type": "number",
+              "value": 0
+            }
+          ]
         }
       ],
       "instances": [
@@ -354,7 +537,7 @@
           "name": "Right_Button",
           "persistentUuid": "54303fcf-a023-4243-a10c-a2e435a06970",
           "width": 80,
-          "x": 144,
+          "x": 160,
           "y": 240,
           "zOrder": 6,
           "numberProperties": [],
@@ -394,6 +577,55 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1.5463917525773196,
+          "height": 4800,
+          "keepRatio": true,
+          "layer": "BG",
+          "name": "Background2",
+          "persistentUuid": "b32ebbfa-2f3e-4586-9066-135269892e76",
+          "width": 4800,
+          "x": -2144,
+          "y": -2208,
+          "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Health_Add",
+          "persistentUuid": "05d873c2-31f9-425b-81a9-332ce64fb708",
+          "width": 0,
+          "x": 384,
+          "y": 128,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Left_Button",
+          "persistentUuid": "b2239260-9b96-44f1-a8bb-255bb9b8fc93",
+          "width": 0,
+          "x": 576,
+          "y": 256,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -411,7 +643,21 @@
               "value": 20
             }
           ],
-          "effects": [],
+          "effects": [
+            {
+              "effectType": "Glow",
+              "name": "Effect",
+              "doubleParameters": {
+                "distance": 20,
+                "innerStrength": 1,
+                "outerStrength": 2
+              },
+              "stringParameters": {
+                "color": "42;166;255"
+              },
+              "booleanParameters": {}
+            }
+          ],
           "behaviors": [
             {
               "name": "EllipseMovement",
@@ -441,7 +687,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Planet Placeholder.png",
+                      "image": "Blue Planet.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -620,7 +866,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Player Placeholder",
+                      "image": "Ship.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -752,7 +998,7 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "Big Asteroid Placeholder",
+              "name": "Big Asteroid",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -762,7 +1008,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Big Asteroid Placeholder2",
+                      "image": "Big Asteroid",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -778,36 +1024,36 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 10,
-                            "y": 54
+                            "x": 12,
+                            "y": 53
                           },
                           {
-                            "x": 1,
-                            "y": 32
+                            "x": 2,
+                            "y": 33.5
                           },
                           {
-                            "x": 10,
-                            "y": 10
+                            "x": 8,
+                            "y": 20
                           },
                           {
-                            "x": 32,
-                            "y": 1
+                            "x": 37.5,
+                            "y": 1.5
                           },
                           {
-                            "x": 54,
-                            "y": 10
+                            "x": 55,
+                            "y": 15
                           },
                           {
                             "x": 63,
-                            "y": 32
+                            "y": 39
                           },
                           {
-                            "x": 54,
-                            "y": 54
+                            "x": 53,
+                            "y": 53.5
                           },
                           {
-                            "x": 32,
-                            "y": 63
+                            "x": 35,
+                            "y": 62.5
                           }
                         ]
                       ]
@@ -817,7 +1063,135 @@
               ]
             },
             {
-              "name": "Asteroid Placeholder",
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Big Asteroid2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 2,
+                            "y": 32
+                          },
+                          {
+                            "x": 13.5,
+                            "y": 18
+                          },
+                          {
+                            "x": 29.5,
+                            "y": 2
+                          },
+                          {
+                            "x": 55,
+                            "y": 15
+                          },
+                          {
+                            "x": 61.5,
+                            "y": 36
+                          },
+                          {
+                            "x": 52,
+                            "y": 51.5
+                          },
+                          {
+                            "x": 29,
+                            "y": 61.5
+                          },
+                          {
+                            "x": 14,
+                            "y": 50
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Big Asteroid3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1.5,
+                            "y": 31
+                          },
+                          {
+                            "x": 15,
+                            "y": 12.5
+                          },
+                          {
+                            "x": 34,
+                            "y": 1.5
+                          },
+                          {
+                            "x": 54.5,
+                            "y": 9.5
+                          },
+                          {
+                            "x": 61.5,
+                            "y": 32.5
+                          },
+                          {
+                            "x": 43.5,
+                            "y": 57.5
+                          },
+                          {
+                            "x": 33,
+                            "y": 62.5
+                          },
+                          {
+                            "x": 14,
+                            "y": 55
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Asteroid",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -827,7 +1201,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Asteroid Placeholder2",
+                      "image": "Asteroid",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -843,36 +1217,36 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 5,
-                            "y": 27
+                            "x": 10.5,
+                            "y": 29
                           },
                           {
                             "x": 1,
-                            "y": 16
+                            "y": 12.5
                           },
                           {
                             "x": 5,
-                            "y": 5
+                            "y": 7
                           },
                           {
-                            "x": 16,
+                            "x": 11,
                             "y": 1
                           },
                           {
-                            "x": 27,
+                            "x": 26.5,
                             "y": 5
                           },
                           {
-                            "x": 31,
-                            "y": 16
+                            "x": 31.5,
+                            "y": 14
                           },
                           {
-                            "x": 27,
-                            "y": 27
+                            "x": 25.5,
+                            "y": 27.5
                           },
                           {
-                            "x": 16,
-                            "y": 31
+                            "x": 17.5,
+                            "y": 31.5
                           }
                         ]
                       ]
@@ -882,7 +1256,135 @@
               ]
             },
             {
-              "name": "Small Asteroid Placeholder",
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Asteroid2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0.5,
+                            "y": 20
+                          },
+                          {
+                            "x": 7,
+                            "y": 4.5
+                          },
+                          {
+                            "x": 16,
+                            "y": 1
+                          },
+                          {
+                            "x": 26.5,
+                            "y": 5.5
+                          },
+                          {
+                            "x": 31.5,
+                            "y": 12
+                          },
+                          {
+                            "x": 21.5,
+                            "y": 28
+                          },
+                          {
+                            "x": 13,
+                            "y": 31
+                          },
+                          {
+                            "x": 5.5,
+                            "y": 28.5
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Asteroid3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0.5,
+                            "y": 13.5
+                          },
+                          {
+                            "x": 4.5,
+                            "y": 4.5
+                          },
+                          {
+                            "x": 14,
+                            "y": 0.5
+                          },
+                          {
+                            "x": 28.5,
+                            "y": 9.5
+                          },
+                          {
+                            "x": 31.5,
+                            "y": 17
+                          },
+                          {
+                            "x": 27,
+                            "y": 27
+                          },
+                          {
+                            "x": 15,
+                            "y": 31.5
+                          },
+                          {
+                            "x": 5,
+                            "y": 27
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Small",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -892,7 +1394,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Small Asteroid Placeholder2",
+                      "image": "Small",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -909,14 +1411,14 @@
                         [
                           {
                             "x": 3,
-                            "y": 13
+                            "y": 14
                           },
                           {
-                            "x": 1,
-                            "y": 8
+                            "x": 0.5,
+                            "y": 11
                           },
                           {
-                            "x": 3,
+                            "x": 3.5,
                             "y": 3
                           },
                           {
@@ -928,7 +1430,7 @@
                             "y": 3
                           },
                           {
-                            "x": 15,
+                            "x": 15.5,
                             "y": 8
                           },
                           {
@@ -936,8 +1438,136 @@
                             "y": 13
                           },
                           {
-                            "x": 8,
+                            "x": 7.5,
+                            "y": 15.5
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Small2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 3,
                             "y": 15
+                          },
+                          {
+                            "x": 0.5,
+                            "y": 9
+                          },
+                          {
+                            "x": 3,
+                            "y": 3
+                          },
+                          {
+                            "x": 7,
+                            "y": 0.5
+                          },
+                          {
+                            "x": 13.5,
+                            "y": 4.5
+                          },
+                          {
+                            "x": 15.5,
+                            "y": 8.5
+                          },
+                          {
+                            "x": 14,
+                            "y": 14
+                          },
+                          {
+                            "x": 8,
+                            "y": 15.5
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Small3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 3,
+                            "y": 13
+                          },
+                          {
+                            "x": 0.5,
+                            "y": 8
+                          },
+                          {
+                            "x": 2.5,
+                            "y": 3.5
+                          },
+                          {
+                            "x": 7.5,
+                            "y": 0.5
+                          },
+                          {
+                            "x": 12,
+                            "y": 4
+                          },
+                          {
+                            "x": 15.5,
+                            "y": 10
+                          },
+                          {
+                            "x": 13,
+                            "y": 13
+                          },
+                          {
+                            "x": 8,
+                            "y": 15.5
                           }
                         ]
                       ]
@@ -1319,7 +1949,52 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Enemy Placeholder2",
+                      "image": "Enemy Placeholder",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 32,
+                            "y": 16
+                          },
+                          {
+                            "x": 0,
+                            "y": 32
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Enemy 2",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Enemy 2",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1461,7 +2136,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Health Regeneration Placeholder",
+                      "image": "Health Regeneration Placeholder2",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1511,13 +2186,13 @@
           "effects": [],
           "behaviors": [
             {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
               "bottomEdgeAnchor": 2,
               "leftEdgeAnchor": 0,
-              "name": "Anchor",
               "relativeToOriginalWindowSize": true,
               "rightEdgeAnchor": 0,
               "topEdgeAnchor": 0,
-              "type": "AnchorBehavior::AnchorBehavior",
               "useLegacyBottomAndRightAnchors": false
             },
             {
@@ -1592,13 +2267,13 @@
           "effects": [],
           "behaviors": [
             {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
               "bottomEdgeAnchor": 2,
               "leftEdgeAnchor": 0,
-              "name": "Anchor",
               "relativeToOriginalWindowSize": true,
               "rightEdgeAnchor": 0,
               "topEdgeAnchor": 0,
-              "type": "AnchorBehavior::AnchorBehavior",
               "useLegacyBottomAndRightAnchors": false
             },
             {
@@ -1673,13 +2348,13 @@
           "effects": [],
           "behaviors": [
             {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
               "bottomEdgeAnchor": 2,
               "leftEdgeAnchor": 0,
-              "name": "Anchor",
               "relativeToOriginalWindowSize": true,
               "rightEdgeAnchor": 2,
               "topEdgeAnchor": 0,
-              "type": "AnchorBehavior::AnchorBehavior",
               "useLegacyBottomAndRightAnchors": false
             },
             {
@@ -1744,6 +2419,193 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Background",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Background2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 240,
+                        "y": 240
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 480,
+                            "y": 0
+                          },
+                          {
+                            "x": 480,
+                            "y": 480
+                          },
+                          {
+                            "x": 0,
+                            "y": 480
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "height": 960,
+          "name": "Background2",
+          "texture": "Background2.png2",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 960,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
+        },
+        {
+          "additive": false,
+          "assetStoreId": "",
+          "destroyWhenNoParticles": true,
+          "emitterAngleA": 0,
+          "emitterAngleB": 360,
+          "emitterForceMax": 300,
+          "emitterForceMin": 50,
+          "flow": 3000,
+          "jumpForwardInTimeOnCreation": 0,
+          "maxParticleNb": 30,
+          "name": "Asteroid_Explosion",
+          "particleAlpha1": 255,
+          "particleAlpha2": 255,
+          "particleAlphaRandomness1": 0,
+          "particleAlphaRandomness2": 0,
+          "particleAngle1": -360,
+          "particleAngle2": 360,
+          "particleAngleRandomness1": 0,
+          "particleAngleRandomness2": 0,
+          "particleBlue1": 9,
+          "particleBlue2": 49,
+          "particleGravityX": 0,
+          "particleGravityY": 0,
+          "particleGreen1": 115,
+          "particleGreen2": 49,
+          "particleLifeTimeMax": 0.5,
+          "particleLifeTimeMin": 0.2,
+          "particleRed1": 243,
+          "particleRed2": 49,
+          "particleSize1": 100,
+          "particleSize2": 0,
+          "particleSizeRandomness1": 0,
+          "particleSizeRandomness2": 0,
+          "rendererParam1": 32,
+          "rendererParam2": 32,
+          "rendererType": "Quad",
+          "tank": 30,
+          "textureParticleName": "Pixel Circle2",
+          "type": "ParticleSystem::ParticleEmitter",
+          "zoneRadius": 1,
+          "variables": [],
+          "effects": [
+            {
+              "effectType": "Outline",
+              "name": "Effect",
+              "doubleParameters": {
+                "padding": 0,
+                "thickness": 2
+              },
+              "stringParameters": {
+                "color": "0;0;0"
+              },
+              "booleanParameters": {}
+            }
+          ],
+          "behaviors": []
+        },
+        {
+          "additive": false,
+          "assetStoreId": "",
+          "destroyWhenNoParticles": true,
+          "emitterAngleA": 0,
+          "emitterAngleB": 360,
+          "emitterForceMax": 150,
+          "emitterForceMin": 25,
+          "flow": 3000,
+          "jumpForwardInTimeOnCreation": 0,
+          "maxParticleNb": 15,
+          "name": "Health_Add",
+          "particleAlpha1": 255,
+          "particleAlpha2": 255,
+          "particleAlphaRandomness1": 0,
+          "particleAlphaRandomness2": 0,
+          "particleAngle1": -720,
+          "particleAngle2": 720,
+          "particleAngleRandomness1": 0,
+          "particleAngleRandomness2": 0,
+          "particleBlue1": 50,
+          "particleBlue2": 167,
+          "particleGravityX": 0,
+          "particleGravityY": 0,
+          "particleGreen1": 255,
+          "particleGreen2": 255,
+          "particleLifeTimeMax": 0.5,
+          "particleLifeTimeMin": 0.2,
+          "particleRed1": 0,
+          "particleRed2": 145,
+          "particleSize1": 100,
+          "particleSize2": 0,
+          "particleSizeRandomness1": 0,
+          "particleSizeRandomness2": 0,
+          "rendererParam1": 32,
+          "rendererParam2": 32,
+          "rendererType": "Quad",
+          "tank": 15,
+          "textureParticleName": "Health Add Particle",
+          "type": "ParticleSystem::ParticleEmitter",
+          "zoneRadius": 1,
+          "variables": [],
+          "effects": [
+            {
+              "effectType": "Outline",
+              "name": "Effect",
+              "doubleParameters": {
+                "padding": 0,
+                "thickness": 2
+              },
+              "stringParameters": {
+                "color": "0;0;0"
+              },
+              "booleanParameters": {}
+            }
+          ],
+          "behaviors": []
         }
       ],
       "objectsFolderStructure": {
@@ -1751,6 +2613,12 @@
         "children": [
           {
             "objectName": "Planet"
+          },
+          {
+            "objectName": "Background"
+          },
+          {
+            "objectName": "Background2"
           },
           {
             "objectName": "Player"
@@ -1787,6 +2655,12 @@
           },
           {
             "objectName": "Left_Button"
+          },
+          {
+            "objectName": "Asteroid_Explosion"
+          },
+          {
+            "objectName": "Health_Add"
           }
         ]
       },
@@ -1815,6 +2689,38 @@
                 "",
                 "",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CentreCamera"
+              },
+              "parameters": [
+                "",
+                "Background2",
+                "",
+                "\"BG\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Start_Camera_Pos[0]",
+                "=",
+                "CameraCenterX(\"BG\")"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Start_Camera_Pos[1]",
+                "=",
+                "CameraCenterY(\"BG\")"
               ]
             }
           ],
@@ -1846,8 +2752,110 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Check Device Type"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "SystemInfo::HasTouchScreen"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "SystemInfo::IsMobile"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Mobile_UI",
+                    ""
+                  ]
+                }
+              ]
             }
           ]
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "folded": true,
+          "name": "Camera",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetCameraAngle"
+                  },
+                  "parameters": [
+                    "",
+                    "=",
+                    "CameraAngle()",
+                    "\"BG\"",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TiledSpriteObject::XOffset"
+                  },
+                  "parameters": [
+                    "Background2",
+                    "=",
+                    "cos(ToRad(CameraAngle())) * 64"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TiledSpriteObject::YOffset"
+                  },
+                  "parameters": [
+                    "Background2",
+                    "=",
+                    "sin(ToRad(CameraAngle())) * 64"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
         },
         {
           "colorB": 228,
@@ -1895,6 +2903,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Input Event",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -2089,6 +3098,44 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "restart scene"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "r"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Untitled scene\"",
+                    ""
+                  ]
+                }
+              ]
             }
           ],
           "parameters": []
@@ -2174,6 +3221,18 @@
                 },
                 {
                   "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Asteroid_Explosion",
+                    "Asteroid.CenterX()",
+                    "Asteroid.CenterY()",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Delete"
                   },
                   "parameters": [
@@ -2248,6 +3307,18 @@
                     "Health",
                     "-",
                     "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Asteroid_Explosion",
+                    "Enemy.CenterX()",
+                    "Enemy.CenterY()",
+                    ""
                   ]
                 },
                 {
@@ -2326,6 +3397,18 @@
                 },
                 {
                   "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Asteroid_Explosion",
+                    "Asteroid.CenterX()",
+                    "Asteroid.CenterY()",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Delete"
                   },
                   "parameters": [
@@ -2365,6 +3448,18 @@
                 },
                 {
                   "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Asteroid_Explosion",
+                    "Enemy.CenterX()",
+                    "Enemy.CenterY()",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Delete"
                   },
                   "parameters": [
@@ -2392,6 +3487,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Enemy",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -2491,6 +3587,17 @@
                         "Enemy",
                         "Shooter",
                         "True"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                      },
+                      "parameters": [
+                        "Enemy",
+                        "Animation",
+                        "=",
+                        "1"
                       ]
                     }
                   ]
@@ -2776,6 +3883,18 @@
               "actions": [
                 {
                   "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Asteroid_Explosion",
+                    "Enemy.CenterX()",
+                    "Enemy.CenterY()",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Delete"
                   },
                   "parameters": [
@@ -2791,6 +3910,37 @@
                     "Enemy_In_Scene",
                     "+",
                     "1"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::CompareNumbers"
+                      },
+                      "parameters": [
+                        "RandomInRange(0, 1)",
+                        "<=",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "Health_Regeneration",
+                        "Enemy.CenterX()",
+                        "Enemy.CenterY()",
+                        ""
+                      ]
+                    }
                   ]
                 }
               ]
@@ -2858,7 +4008,7 @@
                     "Asteroid",
                     "Animation",
                     "=",
-                    "RandomInRange(0, 2)"
+                    "RandomInRange(0, 8)"
                   ]
                 }
               ],
@@ -2885,8 +4035,19 @@
                       "parameters": [
                         "Asteroid",
                         "Animation",
-                        "=",
-                        "1"
+                        ">",
+                        "2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::Index"
+                      },
+                      "parameters": [
+                        "Asteroid",
+                        "Animation",
+                        "<=",
+                        "5"
                       ]
                     }
                   ],
@@ -2914,8 +4075,19 @@
                       "parameters": [
                         "Asteroid",
                         "Animation",
-                        "=",
-                        "2"
+                        ">",
+                        "5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::Index"
+                      },
+                      "parameters": [
+                        "Asteroid",
+                        "Animation",
+                        "<=",
+                        "8"
                       ]
                     }
                   ],
@@ -2973,7 +4145,7 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "Reduce Health When Colliding With bullet\ndelete bullet"
+              "comment": "Reduce Health"
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -3024,7 +4196,7 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "delete asteroid when :\nlife time over\nor health zero"
+              "comment": "delete asteroid"
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -3049,6 +4221,18 @@
                   "parameters": [
                     "Asteroid",
                     "\"Life Time\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Asteroid_Explosion",
+                    "Asteroid.CenterX()",
+                    "Asteroid.CenterY()",
+                    ""
                   ]
                 },
                 {
@@ -3089,6 +4273,18 @@
                 },
                 {
                   "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Asteroid_Explosion",
+                    "Asteroid.CenterX()",
+                    "Asteroid.CenterY()",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Delete"
                   },
                   "parameters": [
@@ -3099,6 +4295,18 @@
               ],
               "events": [
                 {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Random Health Regeneration spawn"
+                },
+                {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -3106,7 +4314,7 @@
                         "value": "BuiltinCommonInstructions::CompareNumbers"
                       },
                       "parameters": [
-                        "RandomInRange(0, 3)",
+                        "RandomInRange(0, 2)",
                         "<=",
                         "0"
                       ]
@@ -3137,7 +4345,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Health Regeneration",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -3373,6 +4580,18 @@
                     "Health",
                     "=",
                     "clamp(Planet.Variable(Health) + 10, 0, 20)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Health_Add",
+                    "Health_Regeneration.CenterX()",
+                    "Health_Regeneration.CenterY()",
+                    ""
                   ]
                 },
                 {
@@ -3802,6 +5021,39 @@
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
           "isLocked": false,
+          "name": "BG",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Light",
+              "doubleParameters": {
+                "elevation": 45,
+                "intensity": 1,
+                "rotation": 0
+              },
+              "stringParameters": {
+                "groundColor": "64;64;64",
+                "skyColor": "255;255;255",
+                "top": "Y-"
+              },
+              "booleanParameters": {}
+            }
+          ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
           "name": "",
           "renderingType": "",
           "visibility": true,
@@ -3966,6 +5218,8 @@
         "gqDaZjCfevOOxBYkK6zlhtZnXCg1"
       ],
       "dependencies": [],
+      "globalVariables": [],
+      "sceneVariables": [],
       "eventsFunctions": [],
       "eventsBasedBehaviors": [
         {
@@ -10105,6 +11359,8 @@
         "q8ubdigLvIRXLxsJDDTaokO41mc2"
       ],
       "dependencies": [],
+      "globalVariables": [],
+      "sceneVariables": [],
       "eventsFunctions": [],
       "eventsBasedBehaviors": [
         {
@@ -12630,6 +13886,8 @@
         "gqDaZjCfevOOxBYkK6zlhtZnXCg1"
       ],
       "dependencies": [],
+      "globalVariables": [],
+      "sceneVariables": [],
       "eventsFunctions": [],
       "eventsBasedBehaviors": [
         {
@@ -12774,6 +14032,8 @@
         "gqDaZjCfevOOxBYkK6zlhtZnXCg1"
       ],
       "dependencies": [],
+      "globalVariables": [],
+      "sceneVariables": [],
       "eventsFunctions": [],
       "eventsBasedBehaviors": [
         {
@@ -18037,6 +19297,8 @@
         "IWykYNRvhCZBN3vEgKEbBPOR3Oc2"
       ],
       "dependencies": [],
+      "globalVariables": [],
+      "sceneVariables": [],
       "eventsFunctions": [],
       "eventsBasedBehaviors": [
         {
@@ -19487,6 +20749,8 @@
         "IWykYNRvhCZBN3vEgKEbBPOR3Oc2"
       ],
       "dependencies": [],
+      "globalVariables": [],
+      "sceneVariables": [],
       "eventsFunctions": [],
       "eventsBasedBehaviors": [
         {
