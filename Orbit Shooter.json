@@ -368,6 +368,15 @@
         "name": "Health Add Particle",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Player Thrust Particle.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Player Thrust Particle",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -399,7 +408,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.2,
         "snap": true,
-        "zoomFactor": 0.8416428125373127,
+        "zoomFactor": 1.7458023987467846,
         "windowMask": false
       },
       "objectsGroups": [
@@ -601,12 +610,12 @@
           "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "Health_Add",
-          "persistentUuid": "05d873c2-31f9-425b-81a9-332ce64fb708",
+          "name": "Left_Button",
+          "persistentUuid": "b2239260-9b96-44f1-a8bb-255bb9b8fc93",
           "width": 0,
-          "x": 384,
-          "y": 128,
-          "zOrder": 11,
+          "x": 576,
+          "y": 256,
+          "zOrder": 12,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -617,12 +626,12 @@
           "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "Left_Button",
-          "persistentUuid": "b2239260-9b96-44f1-a8bb-255bb9b8fc93",
+          "name": "Player_Thrust",
+          "persistentUuid": "64c6e137-623b-4164-bcd5-aa0a79e229c3",
           "width": 0,
-          "x": 576,
-          "y": 256,
-          "zOrder": 12,
+          "x": 288,
+          "y": 192,
+          "zOrder": 13,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -867,7 +876,13 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "Ship.png",
-                      "points": [],
+                      "points": [
+                        {
+                          "name": "Thrust",
+                          "x": 0,
+                          "y": 8
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
                         "x": 0,
@@ -1607,7 +1622,7 @@
             {
               "name": "FireBullet",
               "type": "FireBullet::FireBullet",
-              "FireCooldown": 2,
+              "FireCooldown": 1.5,
               "HasJustFired": false,
               "RotateBullet": true,
               "FiringArc": 45,
@@ -2606,6 +2621,64 @@
             }
           ],
           "behaviors": []
+        },
+        {
+          "additive": false,
+          "assetStoreId": "",
+          "destroyWhenNoParticles": true,
+          "emitterAngleA": 0,
+          "emitterAngleB": 45,
+          "emitterForceMax": 85,
+          "emitterForceMin": 45,
+          "flow": 30,
+          "jumpForwardInTimeOnCreation": 0,
+          "maxParticleNb": 300,
+          "name": "Player_Thrust",
+          "particleAlpha1": 255,
+          "particleAlpha2": 255,
+          "particleAlphaRandomness1": 0,
+          "particleAlphaRandomness2": 0,
+          "particleAngle1": -360,
+          "particleAngle2": 360,
+          "particleAngleRandomness1": 0,
+          "particleAngleRandomness2": 0,
+          "particleBlue1": 0,
+          "particleBlue2": 63,
+          "particleGravityX": 0,
+          "particleGravityY": 0,
+          "particleGreen1": 205,
+          "particleGreen2": 63,
+          "particleLifeTimeMax": 0.5,
+          "particleLifeTimeMin": 0.2,
+          "particleRed1": 255,
+          "particleRed2": 63,
+          "particleSize1": 100,
+          "particleSize2": 0,
+          "particleSizeRandomness1": 0,
+          "particleSizeRandomness2": 0,
+          "rendererParam1": 8,
+          "rendererParam2": 8,
+          "rendererType": "Quad",
+          "tank": -1,
+          "textureParticleName": "Player Thrust Particle",
+          "type": "ParticleSystem::ParticleEmitter",
+          "zoneRadius": 1,
+          "variables": [],
+          "effects": [
+            {
+              "effectType": "Outline",
+              "name": "Effect",
+              "doubleParameters": {
+                "padding": 0,
+                "thickness": 2
+              },
+              "stringParameters": {
+                "color": "0;0;0"
+              },
+              "booleanParameters": {}
+            }
+          ],
+          "behaviors": []
         }
       ],
       "objectsFolderStructure": {
@@ -2661,12 +2734,14 @@
           },
           {
             "objectName": "Health_Add"
+          },
+          {
+            "objectName": "Player_Thrust"
           }
         ]
       },
       "events": [
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -2743,12 +2818,20 @@
               "actions": [
                 {
                   "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "Asteroid_Spawner"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "SetAngle"
                   },
                   "parameters": [
                     "Asteroid_Spawner",
                     "=",
-                    "RandomFloatInRange(0, 360)"
+                    "Player.Angle() + 180 + RandomFloatInRange(-60, 60)"
                   ]
                 }
               ]
@@ -3178,6 +3261,46 @@
                   ]
                 }
               ]
+            },
+            {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "name": "Thrust",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetCenter"
+                      },
+                      "parameters": [
+                        "Player_Thrust",
+                        "=",
+                        "Player.PointX(\"Thrust\")",
+                        "=",
+                        "Player.PointY(\"Thrust\")"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetAngle"
+                      },
+                      "parameters": [
+                        "Player_Thrust",
+                        "=",
+                        "Player.Angle() + 180"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": []
             },
             {
               "type": "BuiltinCommonInstructions::Comment",
@@ -4345,6 +4468,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Health Regeneration",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -4788,7 +4912,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Asteroid Spawner",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -4865,7 +4988,7 @@
                   "parameters": [
                     "Asteroid_Spawner",
                     "=",
-                    "RandomFloatInRange(0, 360)"
+                    "Player.Angle() + 180 + RandomFloatInRange(-60, 60)"
                   ]
                 }
               ],
